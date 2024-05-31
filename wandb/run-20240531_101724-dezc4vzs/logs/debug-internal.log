@@ -1,0 +1,1244 @@
+2024-05-31 10:17:24,612 INFO    StreamThr :1819445 [internal.py:wandb_internal():85] W&B internal server running at pid: 1819445, started at: 2024-05-31 10:17:24.611872
+2024-05-31 10:17:24,615 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status
+2024-05-31 10:17:24,617 INFO    WriterThread:1819445 [datastore.py:open_for_write():87] open: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/run-dezc4vzs.wandb
+2024-05-31 10:17:24,618 DEBUG   SenderThread:1819445 [sender.py:send():378] send: header
+2024-05-31 10:17:24,618 DEBUG   SenderThread:1819445 [sender.py:send():378] send: run
+2024-05-31 10:17:25,143 INFO    SenderThread:1819445 [dir_watcher.py:__init__():211] watching files in: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files
+2024-05-31 10:17:25,143 INFO    SenderThread:1819445 [sender.py:_start_run_threads():1123] run started: dezc4vzs with start time 1717150644.611802
+2024-05-31 10:17:25,150 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: check_version
+2024-05-31 10:17:25,151 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: check_version
+2024-05-31 10:17:25,225 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: run_start
+2024-05-31 10:17:25,241 DEBUG   HandlerThread:1819445 [system_info.py:__init__():26] System info init
+2024-05-31 10:17:25,241 DEBUG   HandlerThread:1819445 [system_info.py:__init__():41] System info init done
+2024-05-31 10:17:25,241 INFO    HandlerThread:1819445 [system_monitor.py:start():194] Starting system monitor
+2024-05-31 10:17:25,242 INFO    SystemMonitor:1819445 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-05-31 10:17:25,242 INFO    HandlerThread:1819445 [system_monitor.py:probe():214] Collecting system info
+2024-05-31 10:17:25,242 INFO    SystemMonitor:1819445 [interfaces.py:start():188] Started cpu monitoring
+2024-05-31 10:17:25,243 INFO    SystemMonitor:1819445 [interfaces.py:start():188] Started disk monitoring
+2024-05-31 10:17:25,244 INFO    SystemMonitor:1819445 [interfaces.py:start():188] Started gpu monitoring
+2024-05-31 10:17:25,244 INFO    SystemMonitor:1819445 [interfaces.py:start():188] Started memory monitoring
+2024-05-31 10:17:25,244 INFO    SystemMonitor:1819445 [interfaces.py:start():188] Started network monitoring
+2024-05-31 10:17:25,257 DEBUG   HandlerThread:1819445 [system_info.py:probe():150] Probing system
+2024-05-31 10:17:25,259 DEBUG   HandlerThread:1819445 [gitlib.py:_init_repo():56] git repository is invalid
+2024-05-31 10:17:25,259 DEBUG   HandlerThread:1819445 [system_info.py:probe():198] Probing system done
+2024-05-31 10:17:25,259 DEBUG   HandlerThread:1819445 [system_monitor.py:probe():223] {'os': 'Linux-5.10.0-29-cloud-amd64-x86_64-with-glibc2.31', 'python': '3.10.14', 'heartbeatAt': '2024-05-31T10:17:25.257585', 'startedAt': '2024-05-31T10:17:24.607262', 'docker': None, 'cuda': None, 'args': (), 'state': 'running', 'program': 'code_llama_alpaca_20K', 'codePathLocal': None, 'host': 'linux-nvidia-100-80gb', 'username': 'cto_auraml_com', 'executable': '/opt/conda/envs/code_llama_alpaca_20K/bin/python', 'cpu_count': 6, 'cpu_count_logical': 12, 'cpu_freq': {'current': 2200.2200000000003, 'min': 0.0, 'max': 0.0}, 'cpu_freq_per_core': [{'current': 2200.22, 'min': 0.0, 'max': 0.0}, {'current': 2200.22, 'min': 0.0, 'max': 0.0}, {'current': 2200.22, 'min': 0.0, 'max': 0.0}, {'current': 2200.22, 'min': 0.0, 'max': 0.0}, {'current': 2200.22, 'min': 0.0, 'max': 0.0}, {'current': 2200.22, 'min': 0.0, 'max': 0.0}, {'current': 2200.22, 'min': 0.0, 'max': 0.0}, {'current': 2200.22, 'min': 0.0, 'max': 0.0}, {'current': 2200.22, 'min': 0.0, 'max': 0.0}, {'current': 2200.22, 'min': 0.0, 'max': 0.0}, {'current': 2200.22, 'min': 0.0, 'max': 0.0}, {'current': 2200.22, 'min': 0.0, 'max': 0.0}], 'disk': {'/': {'total': 503.7117156982422, 'used': 346.5918312072754}}, 'gpu': 'NVIDIA A100-SXM4-80GB', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA A100-SXM4-80GB', 'memory_total': 85899345920}], 'memory': {'total': 167.0607147216797}}
+2024-05-31 10:17:25,259 INFO    HandlerThread:1819445 [system_monitor.py:probe():224] Finished collecting system info
+2024-05-31 10:17:25,259 INFO    HandlerThread:1819445 [system_monitor.py:probe():227] Publishing system info
+2024-05-31 10:17:25,259 DEBUG   HandlerThread:1819445 [system_info.py:_save_conda():207] Saving list of conda packages installed into the current environment
+2024-05-31 10:17:25,260 ERROR   HandlerThread:1819445 [system_info.py:_save_conda():221] Error saving conda packages: [Errno 2] No such file or directory: 'conda'
+Traceback (most recent call last):
+  File "/opt/conda/envs/code_llama_alpaca_20K/lib/python3.10/site-packages/wandb/sdk/internal/system/system_info.py", line 214, in _save_conda
+    subprocess.call(
+  File "/opt/conda/envs/code_llama_alpaca_20K/lib/python3.10/subprocess.py", line 345, in call
+    with Popen(*popenargs, **kwargs) as p:
+  File "/opt/conda/envs/code_llama_alpaca_20K/lib/python3.10/subprocess.py", line 971, in __init__
+    self._execute_child(args, executable, preexec_fn, close_fds,
+  File "/opt/conda/envs/code_llama_alpaca_20K/lib/python3.10/subprocess.py", line 1863, in _execute_child
+    raise child_exception_type(errno_num, err_msg, err_filename)
+FileNotFoundError: [Errno 2] No such file or directory: 'conda'
+2024-05-31 10:17:25,262 DEBUG   HandlerThread:1819445 [system_info.py:_save_conda():222] Saving conda packages done
+2024-05-31 10:17:25,262 INFO    HandlerThread:1819445 [system_monitor.py:probe():229] Finished publishing system info
+2024-05-31 10:17:25,265 DEBUG   SenderThread:1819445 [sender.py:send():378] send: files
+2024-05-31 10:17:25,265 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-metadata.json with policy now
+2024-05-31 10:17:25,371 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: python_packages
+2024-05-31 10:17:25,371 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: python_packages
+2024-05-31 10:17:25,372 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:17:25,372 DEBUG   SenderThread:1819445 [sender.py:send():378] send: telemetry
+2024-05-31 10:17:25,373 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:17:25,685 DEBUG   SenderThread:1819445 [sender.py:send():378] send: config
+2024-05-31 10:17:25,686 DEBUG   SenderThread:1819445 [sender.py:send():378] send: metric
+2024-05-31 10:17:25,686 DEBUG   SenderThread:1819445 [sender.py:send():378] send: telemetry
+2024-05-31 10:17:25,687 DEBUG   SenderThread:1819445 [sender.py:send():378] send: telemetry
+2024-05-31 10:17:25,687 DEBUG   SenderThread:1819445 [sender.py:send():378] send: metric
+2024-05-31 10:17:25,687 WARNING SenderThread:1819445 [sender.py:send_metric():1340] Seen metric with glob (shouldn't happen)
+2024-05-31 10:17:26,145 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_created():271] file/dir created: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/conda-environment.yaml
+2024-05-31 10:17:26,145 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_created():271] file/dir created: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-metadata.json
+2024-05-31 10:17:26,145 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_created():271] file/dir created: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/output.log
+2024-05-31 10:17:26,145 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_created():271] file/dir created: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/requirements.txt
+2024-05-31 10:17:26,891 INFO    wandb-upload_0:1819445 [upload_job.py:push():130] Uploaded file /var/tmp/tmpe2z1px7mwandb/dph18wej-wandb-metadata.json
+2024-05-31 10:17:28,144 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/output.log
+2024-05-31 10:17:29,688 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:17:34,689 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:17:39,690 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:17:40,372 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:17:40,372 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:17:45,659 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:17:50,660 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:17:55,371 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:17:55,372 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:17:55,701 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:17:56,153 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/config.yaml
+2024-05-31 10:18:01,004 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:18:06,005 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:18:10,372 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:18:10,372 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:18:11,701 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:18:16,702 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:18:21,702 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:18:23,476 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:18:23,478 DEBUG   SenderThread:1819445 [sender.py:send():378] send: metric
+2024-05-31 10:18:23,478 DEBUG   SenderThread:1819445 [sender.py:send():378] send: metric
+2024-05-31 10:18:23,478 DEBUG   SenderThread:1819445 [sender.py:send():378] send: metric
+2024-05-31 10:18:23,478 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:18:23,478 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:18:23,480 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:18:24,162 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_created():271] file/dir created: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:18:25,245 DEBUG   SystemMonitor:1819445 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-05-31 10:18:25,246 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:18:25,372 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:18:25,372 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:18:27,684 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:18:28,163 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/config.yaml
+2024-05-31 10:18:32,997 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:18:37,998 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:18:40,372 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:18:40,373 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:18:43,649 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:18:48,651 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:18:53,652 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:18:55,247 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:18:55,372 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:18:55,373 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:18:59,648 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:19:04,649 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:19:09,650 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:19:10,372 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:19:10,373 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:19:15,640 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:19:20,641 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:19:21,639 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:19:21,641 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:19:21,641 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:19:21,643 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:19:22,431 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:19:25,248 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:19:25,372 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:19:25,373 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:19:25,712 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:19:30,713 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:19:35,713 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:19:40,373 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:19:40,374 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:19:40,758 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:19:45,759 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:19:50,760 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:19:55,249 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:19:55,373 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:19:55,373 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:19:56,627 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:20:01,628 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:20:06,629 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:20:10,373 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:20:10,373 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:20:11,702 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:20:16,703 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:20:19,387 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:20:19,388 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:20:19,389 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:20:19,390 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:20:19,447 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:20:22,391 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:20:25,249 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:20:25,373 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:20:25,374 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:20:27,629 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:20:32,630 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:20:37,631 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:20:40,373 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:20:40,374 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:20:42,704 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:20:47,705 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:20:52,705 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:20:55,250 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:20:55,373 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:20:55,374 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:20:58,612 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:21:03,613 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:21:08,614 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:21:10,373 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:21:10,374 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:21:13,644 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:21:16,790 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:21:16,790 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:21:16,791 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:21:16,792 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:21:17,463 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:21:18,793 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:21:23,794 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:21:25,251 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:21:25,373 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:21:25,374 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:21:29,633 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:21:34,633 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:21:39,634 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:21:40,374 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:21:40,374 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:21:44,680 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:21:49,681 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:21:54,682 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:21:55,252 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:21:55,374 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:21:55,374 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:22:00,639 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:22:05,640 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:22:10,374 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:22:10,374 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:22:11,622 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:22:14,234 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:22:14,235 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:22:14,235 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:22:14,237 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:22:14,602 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:22:17,237 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:22:22,238 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:22:25,252 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:22:25,374 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:22:25,375 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:22:27,685 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:22:32,686 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:22:37,687 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:22:40,375 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:22:40,376 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:22:42,712 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:22:47,713 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:22:52,713 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:22:55,254 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:22:55,374 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:22:55,375 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:22:58,643 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:23:03,644 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:23:08,645 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:23:10,375 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:23:10,375 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:23:12,083 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:23:12,084 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:23:12,085 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:23:12,085 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:23:12,621 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:23:14,086 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:23:19,087 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:23:24,088 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:23:25,254 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:23:25,374 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:23:25,375 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:23:29,617 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:23:34,618 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:23:39,619 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:23:40,375 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:23:40,375 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:23:44,658 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:23:49,658 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:23:54,659 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:23:55,255 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:23:55,375 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:23:55,375 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:23:59,700 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:24:04,700 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:24:09,701 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:24:09,735 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:24:09,736 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:24:09,736 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:24:09,737 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:24:10,375 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:24:10,376 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:24:10,639 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:24:15,650 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:24:20,651 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:24:25,255 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:24:25,375 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:24:25,376 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:24:26,639 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:24:31,639 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:24:36,640 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:24:40,375 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:24:40,376 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:24:41,714 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:24:46,715 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:24:51,716 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:24:55,256 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:24:55,376 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:24:55,376 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:24:56,727 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:25:01,727 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:25:06,728 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:25:07,347 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:25:07,347 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:25:07,348 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:25:07,348 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:25:07,660 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:25:10,376 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:25:10,376 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:25:12,696 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:25:17,697 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:25:22,698 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:25:25,256 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:25:25,376 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:25:25,376 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:25:27,724 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:25:32,725 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:25:37,726 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:25:40,376 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:25:40,377 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:25:43,651 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:25:48,652 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:25:53,653 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:25:55,257 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:25:55,376 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:25:55,377 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:25:58,693 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:26:03,693 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:26:04,896 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:26:04,897 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:26:04,897 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:26:04,898 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:26:05,676 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:26:08,899 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:26:10,377 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:26:10,377 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:26:14,658 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:26:19,659 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:26:24,659 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:26:25,258 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:26:25,376 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:26:25,377 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:26:30,659 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:26:35,660 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:26:40,377 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:26:40,377 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:26:40,668 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:26:45,669 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:26:50,765 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:26:55,259 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:26:55,377 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:26:55,377 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:26:56,718 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:27:01,719 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:27:02,320 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:27:02,321 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:27:02,321 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:27:02,321 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:27:02,770 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:27:07,322 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:27:10,377 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:27:10,377 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:27:12,631 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:27:17,632 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:27:22,632 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:27:25,260 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:27:25,377 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:27:25,378 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:27:27,688 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:27:32,689 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:27:37,690 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:27:40,377 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:27:40,378 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:27:42,694 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:27:47,695 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:27:52,696 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:27:55,260 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:27:55,377 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:27:55,378 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:27:58,636 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:27:59,967 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:27:59,968 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:27:59,968 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:27:59,969 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:28:00,788 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:28:03,970 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:28:08,970 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:28:10,378 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:28:10,378 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:28:14,725 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:28:19,726 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:28:24,727 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:28:25,264 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:28:25,378 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:28:25,378 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:28:30,700 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:28:35,702 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:28:40,379 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:28:40,379 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:28:40,718 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:28:45,719 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:28:50,720 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:28:55,262 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:28:55,378 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:28:55,379 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:28:56,657 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:28:57,637 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:28:57,638 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:28:57,638 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:28:57,639 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:28:57,819 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:29:02,641 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:29:07,641 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:29:10,378 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:29:10,379 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:29:12,678 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:29:17,679 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:29:22,680 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:29:25,263 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:29:25,378 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:29:25,379 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:29:28,643 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:29:33,643 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:29:38,644 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:29:40,378 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:29:40,379 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:29:44,637 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:29:49,638 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:29:54,639 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:29:55,168 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:29:55,169 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:29:55,169 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:29:55,171 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:29:55,263 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:29:55,379 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:29:55,379 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:29:55,836 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:29:59,644 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:30:04,645 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:30:09,646 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:30:10,379 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:30:10,380 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:30:15,638 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:30:20,639 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:30:25,264 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:30:25,379 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:30:25,379 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:30:25,683 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:30:30,684 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:30:35,685 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:30:40,379 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:30:40,380 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:30:40,711 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:30:45,712 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:30:50,713 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:30:52,407 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:30:52,408 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:30:52,409 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:30:52,409 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:30:52,857 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:30:55,265 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:30:55,379 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:30:55,379 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:30:55,716 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:31:00,716 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:31:05,717 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:31:10,379 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:31:10,380 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:31:11,666 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:31:16,667 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:31:21,667 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:31:25,266 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:31:25,379 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:31:25,380 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:31:26,680 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:31:31,681 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:31:36,682 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:31:40,379 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:31:40,380 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:31:41,700 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:31:46,701 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:31:49,914 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:31:49,915 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:31:49,915 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:31:49,915 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:31:50,878 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:31:51,916 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:31:55,266 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:31:55,380 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:31:55,380 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:31:57,673 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:32:02,674 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:32:07,674 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:32:10,380 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:32:10,381 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:32:13,615 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:32:18,616 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:32:23,617 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:32:25,267 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:32:25,380 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:32:25,380 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:32:28,709 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:32:33,709 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:32:38,710 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:32:40,380 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:32:40,381 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:32:44,673 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:32:47,423 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:32:47,423 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:32:47,424 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:32:47,424 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:32:48,167 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:32:50,425 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:32:55,267 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:32:55,380 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:32:55,381 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:32:55,706 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:33:00,707 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:33:05,708 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:33:10,381 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:33:10,381 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:33:11,651 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:33:16,652 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:33:21,653 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:33:25,268 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:33:25,381 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:33:25,381 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:33:27,653 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:33:32,654 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:33:37,655 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:33:40,381 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:33:40,381 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:33:42,659 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:33:44,857 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:33:44,858 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:33:44,858 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:33:44,858 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:33:45,185 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:33:47,859 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:33:52,860 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:33:55,269 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:33:55,381 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:33:55,381 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:33:58,685 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:34:03,686 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:34:08,687 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:34:10,381 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:34:10,382 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:34:14,659 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:34:19,660 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:34:24,661 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:34:25,269 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:34:25,381 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:34:25,382 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:34:29,703 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:34:34,704 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:34:39,705 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:34:40,381 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:34:40,382 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:34:42,378 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:34:42,379 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:34:42,379 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:34:42,379 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:34:43,202 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:34:45,380 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:34:50,381 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:34:55,270 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:34:55,381 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:34:55,382 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:34:55,652 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:35:00,653 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:35:05,654 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:35:10,382 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:35:10,382 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:35:10,699 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:35:15,700 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:35:20,701 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:35:25,271 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:35:25,382 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:35:25,382 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:35:25,709 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:35:30,710 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:35:35,711 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:35:39,910 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:35:39,911 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:35:39,911 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:35:39,911 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:35:40,382 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:35:40,383 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:35:40,496 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:35:41,659 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:35:46,660 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:35:51,661 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:35:55,271 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:35:55,382 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:35:55,383 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:35:56,722 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:36:01,723 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:36:06,774 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:36:10,382 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:36:10,383 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:36:12,651 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:36:17,652 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:36:22,653 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:36:25,272 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:36:25,382 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:36:25,383 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:36:27,657 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:36:32,658 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:36:37,411 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:36:37,412 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:36:37,412 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:36:37,413 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:36:37,514 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:36:38,413 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:36:40,383 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:36:40,383 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:36:43,707 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:36:48,708 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:36:53,709 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:36:55,273 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:36:55,383 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:36:55,383 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:36:58,715 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:37:03,715 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:37:08,716 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:37:10,383 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:37:10,384 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:37:14,641 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:37:19,641 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:37:24,642 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:37:25,274 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:37:25,383 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:37:25,384 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:37:29,674 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:37:34,675 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:37:34,744 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:37:34,745 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:37:34,745 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:37:34,745 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:37:35,532 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:37:39,746 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:37:40,383 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:37:40,384 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:37:45,723 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:37:50,723 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:37:55,274 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:37:55,383 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:37:55,384 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:37:55,731 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:38:00,732 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:38:05,733 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:38:10,384 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:38:10,384 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:38:11,701 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:38:16,703 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:38:21,704 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:38:25,275 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:38:25,383 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:38:25,384 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:38:27,656 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:38:32,287 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:38:32,288 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:38:32,289 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:38:32,289 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:38:32,724 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:38:33,290 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:38:38,290 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:38:40,384 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:38:40,384 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:38:43,636 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:38:48,637 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:38:53,638 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:38:55,276 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:38:55,384 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:38:55,384 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:38:58,710 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:39:03,711 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:39:08,712 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:39:10,384 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:39:10,385 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:39:14,680 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:39:19,681 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:39:24,682 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:39:25,276 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:39:25,384 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:39:25,385 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:39:29,747 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:39:29,748 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:39:29,749 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:39:29,749 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:39:29,749 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:39:30,741 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:39:34,750 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:39:39,751 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:39:40,384 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:39:40,385 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:39:45,712 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:39:50,713 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:39:55,277 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:39:55,384 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:39:55,385 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:39:55,723 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:40:00,723 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:40:05,724 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:40:10,385 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:40:10,385 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:40:11,716 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:40:16,717 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:40:21,718 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:40:25,278 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:40:25,385 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:40:25,385 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:40:27,291 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:40:27,292 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:40:27,292 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:40:27,293 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:40:27,293 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:40:27,757 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:40:32,294 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:40:37,295 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:40:40,385 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:40:40,386 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:40:42,710 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:40:47,712 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:40:52,713 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:40:55,278 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:40:55,385 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:40:55,386 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:40:58,681 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:41:03,682 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:41:08,683 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:41:10,385 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:41:10,386 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:41:13,689 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:41:18,690 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:41:23,691 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:41:25,215 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:41:25,216 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:41:25,216 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:41:25,217 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:41:25,282 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:41:25,385 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:41:25,386 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:41:25,776 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:41:28,694 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:41:33,695 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:41:38,696 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:41:40,385 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:41:40,386 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:41:44,650 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:41:49,651 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:41:54,652 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:41:55,280 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:41:55,386 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:41:55,386 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:42:00,642 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:42:05,643 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:42:10,386 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:42:10,386 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:42:10,686 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:42:15,687 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:42:20,688 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:42:22,784 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:42:22,785 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:42:22,785 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:42:22,787 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:42:22,793 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:42:25,280 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:42:25,386 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:42:25,386 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:42:25,710 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:42:30,710 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:42:35,711 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:42:40,386 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:42:40,387 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:42:40,717 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:42:45,718 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:42:50,718 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:42:55,282 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:42:55,386 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:42:55,387 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:42:56,697 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:43:01,698 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:43:06,699 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:43:10,386 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:43:10,387 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:43:11,720 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:43:16,882 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:43:20,190 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:43:20,191 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:43:20,191 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:43:20,192 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:43:20,883 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:43:22,192 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:43:25,282 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:43:25,387 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:43:25,387 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:43:27,622 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:43:32,622 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:43:37,623 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:43:40,387 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:43:40,387 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:43:42,690 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:43:47,691 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:43:52,692 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:43:55,282 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:43:55,387 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:43:55,387 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:43:57,702 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:44:02,703 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:44:07,703 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:44:10,387 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:44:10,387 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:44:12,721 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:44:17,722 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:44:17,748 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:44:17,749 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:44:17,749 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:44:17,750 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:44:17,901 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:44:22,751 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:44:25,283 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:44:25,387 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:44:25,387 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:44:28,714 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:44:33,715 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:44:38,716 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:44:40,387 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:44:40,388 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:44:44,690 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:44:49,691 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:44:54,691 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:44:55,284 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:44:55,387 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:44:55,388 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:44:59,722 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:45:04,723 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:45:09,723 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:45:10,387 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:45:10,388 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:45:15,037 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:45:15,038 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:45:15,038 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:45:15,038 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:45:15,039 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:45:15,919 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:45:20,040 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:45:25,040 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:45:25,284 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:45:25,387 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:45:25,388 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:45:30,667 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:45:35,668 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:45:40,388 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:45:40,388 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:45:41,652 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:45:46,653 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:45:51,654 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:45:55,285 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:45:55,388 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:45:55,389 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:45:56,682 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:46:01,683 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:46:06,684 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:46:10,388 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:46:10,388 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:46:11,703 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:46:12,525 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:46:12,526 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:46:12,526 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:46:12,526 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:46:12,937 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:46:17,528 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:46:22,529 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:46:25,286 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:46:25,388 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:46:25,389 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:46:27,692 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:46:32,693 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:46:37,694 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:46:40,388 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:46:40,389 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:46:42,709 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:46:47,709 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:46:52,710 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:46:55,286 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:46:55,388 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:46:55,389 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:46:57,728 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:47:02,729 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:47:07,730 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:47:09,926 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:47:09,927 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:47:09,927 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:47:09,927 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:47:09,954 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:47:10,389 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:47:10,389 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:47:13,713 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:47:18,714 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:47:23,714 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:47:25,287 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:47:25,389 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:47:25,389 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:47:29,658 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:47:34,659 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:47:39,660 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:47:40,389 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:47:40,389 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:47:44,734 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:47:49,734 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:47:54,735 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:47:55,288 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:47:55,389 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:47:55,389 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:48:00,721 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:48:05,722 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:48:07,470 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:48:07,471 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:48:07,472 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:48:07,472 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:48:07,972 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:48:10,389 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:48:10,390 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:48:11,665 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:48:16,666 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:48:21,667 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:48:25,288 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:48:25,389 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:48:25,390 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:48:27,662 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:48:32,663 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:48:37,664 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:48:40,389 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:48:40,390 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:48:43,660 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:48:48,661 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:48:53,662 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:48:55,289 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:48:55,389 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:48:55,390 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:48:58,707 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:49:03,708 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:49:05,267 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:49:05,268 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:49:05,268 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:49:05,268 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:49:05,272 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:49:09,269 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:49:10,390 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:49:10,390 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:49:14,661 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:49:19,662 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:49:24,663 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:49:25,290 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:49:25,390 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:49:25,390 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:49:30,655 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:49:35,656 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:49:40,390 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:49:40,390 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:49:40,743 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:49:45,744 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:49:50,745 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:49:55,290 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:49:55,390 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:49:55,391 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:49:56,671 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:50:01,672 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:50:02,942 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:50:02,943 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:50:02,943 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:50:02,944 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:50:03,290 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:50:06,945 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:50:10,390 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:50:10,391 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:50:12,631 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:50:17,632 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:50:22,633 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:50:25,291 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:50:25,390 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:50:25,391 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:50:27,699 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:50:32,700 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:50:37,701 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:50:40,390 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:50:40,391 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:50:43,629 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:50:48,629 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:50:53,630 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:50:55,292 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:50:55,390 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:50:55,391 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:50:58,729 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:51:00,306 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:51:00,307 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:51:00,307 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:51:00,308 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:51:00,308 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:51:04,309 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:51:09,310 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:51:10,390 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:51:10,391 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:51:14,640 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:51:19,641 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:51:24,642 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:51:25,293 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:51:25,391 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:51:25,391 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:51:29,707 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:51:34,707 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:51:39,708 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:51:40,391 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:51:40,391 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:51:45,689 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:51:50,690 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:51:55,293 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:51:55,391 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:51:55,391 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:51:56,643 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:51:57,732 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:51:57,733 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:51:57,734 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:51:57,734 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:51:58,370 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:52:01,735 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:52:06,736 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:52:10,391 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:52:10,392 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:52:12,702 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:52:17,703 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:52:22,704 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:52:25,294 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:52:25,391 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:52:25,392 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:52:28,625 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:52:33,626 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:52:38,627 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:52:40,391 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:52:40,392 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:52:43,714 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:52:48,715 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:52:53,716 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:52:55,102 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:52:55,103 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:52:55,103 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:52:55,103 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:52:55,295 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:52:55,388 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:52:55,391 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:52:55,392 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:52:59,635 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:53:04,636 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:53:09,637 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:53:10,391 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:53:10,392 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:53:14,712 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:53:19,713 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:53:24,714 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:53:25,295 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:53:25,392 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:53:25,392 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:53:30,664 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:53:35,665 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:53:40,392 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:53:40,392 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:53:40,704 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:53:45,704 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:53:50,705 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:53:52,498 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:53:52,499 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:53:52,499 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:53:52,500 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:53:53,407 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:53:55,296 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:53:55,392 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:53:55,392 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:53:56,677 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:54:01,678 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:54:06,679 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:54:10,392 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:54:10,393 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:54:11,705 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:54:16,705 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:54:21,706 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:54:25,299 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:54:25,392 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:54:25,393 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:54:27,630 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:54:32,707 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:54:37,708 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:54:40,392 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:54:40,393 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:54:43,628 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:54:48,629 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:54:49,956 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:54:49,957 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:54:49,957 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:54:49,958 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:54:50,423 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:54:53,959 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:54:55,297 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:54:55,392 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:54:55,393 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:54:59,656 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:55:04,657 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:55:09,658 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:55:10,392 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:55:10,393 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:55:14,658 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:55:19,659 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:55:24,660 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:55:25,298 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:55:25,393 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:55:25,394 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:55:29,704 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:55:34,705 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:55:39,706 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:55:40,393 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:55:40,393 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:55:45,638 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:55:47,324 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:55:47,325 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:55:47,325 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:55:47,326 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:55:47,439 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:55:51,327 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:55:55,299 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:55:55,393 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:55:55,393 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:55:56,649 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:56:01,650 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:56:06,651 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:56:10,393 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:56:10,394 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:56:11,652 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:56:16,652 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:56:21,653 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:56:25,299 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:56:25,393 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:56:25,393 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:56:26,732 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:56:31,733 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:56:36,734 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:56:40,393 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:56:40,394 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:56:42,660 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:56:44,723 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:56:44,724 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:56:44,724 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:56:44,725 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:56:45,536 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:56:47,726 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:56:52,727 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:56:55,300 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:56:55,393 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:56:55,394 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:56:58,726 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:57:03,727 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:57:08,728 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:57:10,393 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:57:10,394 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:57:14,674 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:57:19,675 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:57:24,676 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:57:25,301 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:57:25,393 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:57:25,394 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:57:30,647 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:57:35,648 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:57:40,394 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:57:40,394 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:57:40,706 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:57:42,235 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:57:42,236 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:57:42,236 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:57:42,236 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:57:42,556 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:57:46,237 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:57:51,238 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:57:55,301 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:57:55,394 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:57:55,394 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:57:56,705 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:58:01,706 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:58:06,707 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:58:10,394 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:58:10,394 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:58:12,651 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:58:17,652 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:58:22,653 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:58:25,302 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:58:25,394 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:58:25,394 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:58:27,671 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:58:32,672 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:58:37,673 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:58:39,693 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:58:39,694 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:58:39,694 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:58:39,695 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:58:40,394 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:58:40,395 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:58:40,577 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:58:42,700 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:58:47,701 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:58:52,702 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:58:55,303 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:58:55,395 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:58:55,395 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:58:58,667 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:59:03,668 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:59:08,669 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:59:10,395 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:59:10,395 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:59:13,727 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:59:18,728 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:59:23,729 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:59:25,303 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:59:25,395 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:59:25,395 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:59:29,686 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:59:34,686 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:59:37,190 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 10:59:37,191 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 10:59:37,191 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 10:59:37,191 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 10:59:37,595 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 10:59:40,192 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:59:40,395 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:59:40,395 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:59:45,663 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:59:50,664 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 10:59:55,304 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 10:59:55,395 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 10:59:55,395 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 10:59:56,653 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:00:01,654 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:00:06,655 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:00:10,395 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 11:00:10,396 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 11:00:11,720 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:00:16,721 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:00:21,722 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:00:25,305 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 11:00:25,395 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 11:00:25,396 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 11:00:27,687 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:00:32,688 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:00:34,653 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 11:00:34,653 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 11:00:34,654 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 11:00:34,654 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 11:00:35,612 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 11:00:38,655 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:00:40,395 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 11:00:40,396 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 11:00:43,672 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:00:48,673 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:00:53,674 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:00:55,305 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 11:00:55,396 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 11:00:55,396 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 11:00:59,673 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:01:04,673 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:01:09,674 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:01:10,396 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 11:01:10,397 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 11:01:14,711 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:01:19,712 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:01:24,712 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:01:25,306 DEBUG   SenderThread:1819445 [sender.py:send():378] send: stats
+2024-05-31 11:01:25,396 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: stop_status
+2024-05-31 11:01:25,396 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: stop_status
+2024-05-31 11:01:30,652 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report
+2024-05-31 11:01:32,335 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: partial_history
+2024-05-31 11:01:32,336 DEBUG   SenderThread:1819445 [sender.py:send():378] send: history
+2024-05-31 11:01:32,336 DEBUG   SenderThread:1819445 [sender.py:send_request():405] send_request: summary_record
+2024-05-31 11:01:32,336 INFO    SenderThread:1819445 [sender.py:_save_file():1389] saving file wandb-summary.json with policy end
+2024-05-31 11:01:32,628 INFO    Thread-12 :1819445 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/cto_auraml_com/gen_ai/code_llama_alpaca_20K/wandb/run-20240531_101724-dezc4vzs/files/wandb-summary.json
+2024-05-31 11:01:36,337 DEBUG   HandlerThread:1819445 [handler.py:handle_request():158] handle_request: status_report

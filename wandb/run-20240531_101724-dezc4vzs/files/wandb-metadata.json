@@ -1,0 +1,101 @@
+{
+    "os": "Linux-5.10.0-29-cloud-amd64-x86_64-with-glibc2.31",
+    "python": "3.10.14",
+    "heartbeatAt": "2024-05-31T10:17:25.257585",
+    "startedAt": "2024-05-31T10:17:24.607262",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "code_llama_alpaca_20K",
+    "codePathLocal": null,
+    "host": "linux-nvidia-100-80gb",
+    "username": "cto_auraml_com",
+    "executable": "/opt/conda/envs/code_llama_alpaca_20K/bin/python",
+    "cpu_count": 6,
+    "cpu_count_logical": 12,
+    "cpu_freq": {
+        "current": 2200.2200000000003,
+        "min": 0.0,
+        "max": 0.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2200.22,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.22,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.22,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.22,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.22,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.22,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.22,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.22,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.22,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.22,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.22,
+            "min": 0.0,
+            "max": 0.0
+        },
+        {
+            "current": 2200.22,
+            "min": 0.0,
+            "max": 0.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 503.7117156982422,
+            "used": 346.5918312072754
+        }
+    },
+    "gpu": "NVIDIA A100-SXM4-80GB",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA A100-SXM4-80GB",
+            "memory_total": 85899345920
+        }
+    ],
+    "memory": {
+        "total": 167.0607147216797
+    }
+}
