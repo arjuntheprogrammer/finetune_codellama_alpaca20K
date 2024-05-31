@@ -37,8 +37,7 @@ Completion: `for (int i = 1; i <= 10; i++) { System.out.println(i * i); }`
 
 ## YT RECORDING
 
-[![CodeLlama Finetuning](https://img.youtube.com/vi/Y2CrFdYgpUc/0.jpg)](https://youtu.be/Y2CrFdYgpUc)
-
+[![CodeLlama Finetuning](https://img.youtube.com/vi/s6uqbqxXXao/0.jpg)](https://youtu.be/s6uqbqxXXao)
 
 ---
 
