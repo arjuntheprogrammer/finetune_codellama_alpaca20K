@@ -1,3 +1,20 @@
 /opt/conda/envs/code_llama_alpaca_20K/lib/python3.10/site-packages/torch/utils/checkpoint.py:464: UserWarning: torch.utils.checkpoint: the use_reentrant parameter should be passed explicitly. In version 2.4 we will raise an exception if use_reentrant is not passed. use_reentrant=False is recommended, but if you need to preserve the current default behavior, you can pass use_reentrant=True. Refer to docs for more details on the differences between the two variants.
   warnings.warn(
 /opt/conda/envs/code_llama_alpaca_20K/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+start_time: 1717157111.0090144
+/opt/conda/envs/code_llama_alpaca_20K/lib/python3.10/site-packages/bitsandbytes/autograd/_functions.py:322: UserWarning: MatMul8bitLt: inputs will be cast from torch.float32 to float16 during quantization
+  warnings.warn(f"MatMul8bitLt: inputs will be cast from {A.dtype} to float16 during quantization")
+output: Create a Python class with the following attributes: firstname, lastname and address.
+ class Person:
+    def __init__(self, firstname, lastname, address):
+        self.firstname = firstname
+        self.lastname = lastname
+        self.address = address
+end_time: 1717157122.3060226
+Execution time: 11.30 seconds
+Token will not been saved to git credential helper. Pass `add_to_git_credential=True` if you want to set the git credential as well.
+Token is valid (permission: write).
+Your token has been saved to /home/cto_auraml_com/.cache/huggingface/token
+Login successful
+

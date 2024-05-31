@@ -1,20 +1,19 @@
 # CODE LLAMA TRAINING
 
-GPU TYPE: A100 80GB
-VRAM USED: 11.6GB
+- GPU TYPE: A100 80GB
+- VRAM USED: 11.6GB
 
-Training Dataset: HuggingFaceH4/CodeAlpaca_20K
-Dataset Link: https://huggingface.co/datasets/HuggingFaceH4/CodeAlpaca_20K
-Dataset Size: 20K rows (train: 18K, test: 2K)
+- Training Dataset: HuggingFaceH4/CodeAlpaca_20K
+- Dataset Link: <https://huggingface.co/datasets/HuggingFaceH4/CodeAlpaca_20K>
+- Dataset Size: 20K rows (train: 18K, test: 2K)
 
-Pretrained Model: codellama/CodeLlama-7b-hf
-Pretrained Model Link: codellama/CodeLlama-7b-hf
+- Pretrained Model: codellama/CodeLlama-7b-hf
+- Pretrained Model Link: <https://huggingface.co/codellama/CodeLlama-7b-hf>
 
-Finetuning Training Time: 1 hour 47 mins
+- Finetuning Training Time: 1 hour 47 mins
 
-HF Uploaded Model:
-HF Uploaded Tokenizer:
-Wandb Logs Link:
+- HF Uploaded Model: <https://huggingface.co/arjuntheprogrammer/trained-model>
+- Wandb Logs Link: <https://wandb.ai/arjuntheprogrammer/huggingface/runs/dezc4vzs/overview?nw=nwuserarjuntheprogrammer>
 
 
 ## DATASET EXAMPLE
